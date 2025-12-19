@@ -1,41 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>The Vidhyapeeth</title>
-  <style>
-    body {
-      font-family: Arial;
-      text-align: center;
-      background: #f5f5f5;
-      padding-top: 100px;
-    }
-    h1 {
-      color: #2c3e50;
-    }
-    button {
-      padding: 15px 30px;
-      font-size: 18px;
-      margin: 10px;
-      cursor: pointer;
-      border: none;
-      background: #007bff;
-      color: white;
-      border-radius: 5px;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>The Vidhyapeeth | Student CRM</title>
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: white;
+  width: 90%;
+  max-width: 380px;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.student {
+  background: #007bff;
+  color: white;
+}
+
+.admin {
+  background: #28a745;
+  color: white;
+}
+
+footer {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #888;
+}
+</style>
 </head>
+
 <body>
 
-  <h1>The Vidhyapeeth</h1>
-  <p>Student CRM Portal</p>
+<div class="card">
+  <div class="logo">📘 The Vidhyapeeth</div>
+  <div class="subtitle">Student CRM Portal</div>
 
-  <a href="student-login.html">
-    <button>Student Login</button>
-  </a>
+  <button class="student">Student Login</button>
+  <button class="admin">Admin Login</button>
 
-  <a href="admin-login.html">
-    <button>Admin Login</button>
-  </a>
+  <footer>© 2025 The Vidhyapeeth</footer>
+</div>
 
 </body>
 </html>
